@@ -122,3 +122,34 @@ body {
 .flip-card-back a:hover {
     background: rgba(255, 255, 255, 0.5);
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        height: auto;
+    }
+    .grid-item {
+        min-height: 120px;
+        max-width: 90%;
+    }
+    .login-container {
+        width: 90%;
+        max-width: 400px;
+        padding: 20px;
+    }
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

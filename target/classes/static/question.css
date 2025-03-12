@@ -5,6 +5,7 @@ body {
     transition: background 0.5s ease-in-out;
     position: relative;
     overflow: hidden;
+    padding: 10px;
 }
 
 .background-gif {
@@ -17,7 +18,7 @@ body {
     background-position: center;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-    z-index: 1000; /* Ensure it appears above everything */
+    z-index: -1; /* Ensure it appears above everything */
 }
 
 .container {
@@ -37,6 +38,7 @@ body {
     background-color: lightgray;
     border-radius: 5px;
     margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .progress {
@@ -97,4 +99,10 @@ body {
 
 .dashboard-btn:active {
     transform: scale(0.98); /* Click effect */
+}
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
 }

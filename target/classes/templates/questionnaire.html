@@ -14,6 +14,7 @@
             height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
+            padding: 15px;
         }
         .container {
             background: rgba(255, 255, 255, 0.9);
@@ -49,6 +50,15 @@
         }
         button.dashboard-btn:hover {
             background: #ff6347;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+                max-width: 95%;
+            }
+            .dashboard-btn {
+                width: 100%; /* Makes button full width on smaller screens */
+            }
         }
     </style>
 </head>
