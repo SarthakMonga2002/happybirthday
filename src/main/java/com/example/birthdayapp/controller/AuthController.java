@@ -12,6 +12,11 @@ public class AuthController {
     @Autowired
     private AuthService authService;
 
+    @GetMapping("/")
+    public String home() {
+        return "redirect:/auth/login"; // Redirects to the login page
+    }
+
     // ✅ Login Page
     @GetMapping("/auth/login")
     public String showLoginPage() {
