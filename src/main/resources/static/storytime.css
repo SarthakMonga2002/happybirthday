@@ -136,3 +136,31 @@ button:hover {
 .dashboard-btn:hover {
     background-color: #ff3c41;
 }
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 600px) {
+    .card-container {
+        width: 90%;
+        height: auto;
+        margin-top: 60px;
+    }
+
+    .card {
+        width: 280px;
+        height: 360px;
+        font-size: 18px;
+    }
+
+    .navigation {
+        padding: 0 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .dashboard-btn {
+        width: 80%;
+    }
+}
