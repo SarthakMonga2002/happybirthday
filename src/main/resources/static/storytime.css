@@ -15,7 +15,6 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
-    z-index: 10;
 }
 
 button {
@@ -27,16 +26,12 @@ button {
     background-color: #ff758c;
     color: white;
     cursor: pointer;
-    transition: background 0.3s ease-in-out, transform 0.2s;
 }
 
 button:hover {
     background-color: #ff3c41;
-    transform: scale(1.05);
 }
-button:active {
-    transform: scale(0.95);
-}
+
 /* Move "Next" Button Slightly Left */
 #nextBtn {
     margin-right: 50px;
@@ -47,7 +42,7 @@ button:active {
     position: relative;
     width: 300px;
     height: 400px;
-    margin: 100px auto; /* Moves the deck slightly up */
+    margin: 80px auto; /* Moves the deck slightly up */
     perspective: 1000px;
 }
 
@@ -136,41 +131,8 @@ button:active {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: background 0.3s ease-in-out, transform 0.2s;
 }
 
 .dashboard-btn:hover {
     background-color: #ff3c41;
-    transform: scale(1.05);
-}
-
-.dashboard-btn:active {
-    transform: scale(0.95);
-}
-
-@media (max-width: 600px) {
-    .card-container {
-        width: 90%;
-        height: auto;
-        margin-top: 60px;
-    }
-
-    .card {
-        width: 280px;
-        height: 360px;
-        font-size: 18px;
-    }
-
-    .navigation {
-        padding: 0 10px;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
-    .dashboard-btn {
-        width: 80%;
-    }
 }
