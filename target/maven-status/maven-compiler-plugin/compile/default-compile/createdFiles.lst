@@ -1,0 +1,4 @@
+com\example\birthdayapp\service\AuthService.class
+com\example\birthdayapp\config\SecurityConfig.class
+com\example\birthdayapp\BirthdayAppApplication.class
+com\example\birthdayapp\controller\AuthController.class
