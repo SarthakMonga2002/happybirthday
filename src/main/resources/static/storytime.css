@@ -143,6 +143,8 @@ button:hover {
         width: 90%;
         height: auto;
         margin-top: 60px;
+        position: relative;
+        z-index: 2; /* Ensures it's above the background */
     }
 
     .card {
@@ -152,15 +154,23 @@ button:hover {
     }
 
     .navigation {
-        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin-top: 20px; /* Push buttons below the card stack */
+        position: relative;
+        z-index: 2;
     }
 
     button {
         font-size: 14px;
         padding: 8px 16px;
+        margin-top: 10px; /* Extra spacing */
     }
 
     .dashboard-btn {
         width: 80%;
+        margin-top: 20px; /* Push it further down */
     }
 }
