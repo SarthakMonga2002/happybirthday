@@ -144,13 +144,15 @@ button:hover {
         height: auto;
         margin-top: 60px;
         position: relative;
-        z-index: 2; /* Ensures it's above the background */
+        z-index: 10; /* Ensure cards are above the background */
     }
 
     .card {
         width: 280px;
         height: 360px;
         font-size: 18px;
+        position: relative;
+        z-index: 11; /* Ensure each card is on top */
     }
 
     .navigation {
@@ -158,19 +160,29 @@ button:hover {
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        margin-top: 120px; /* Push buttons below the card stack */
+        margin-top: 20px; /* Push buttons below the card stack */
         position: relative;
-        z-index: 2;
+        z-index: 12; /* Ensure buttons are above cards */
     }
 
     button {
         font-size: 14px;
         padding: 8px 16px;
-        margin-top: 10px; /* Extra spacing */
+        margin-top: 20px; /* Extra spacing */
+        z-index: 13; /* Ensure buttons remain visible */
+        position: relative;
     }
 
     .dashboard-btn {
         width: 80%;
-        margin-top: 20px; /* Push it further down */
+        margin-top: 40px; /* Push it further down */
+        z-index: 13; /* Keep it visible */
+        position: relative;
+    }
+
+    body {
+        position: relative;
+        z-index: 1; /* Ensures the background stays below everything */
     }
 }
+
